@@ -6,8 +6,4 @@
                       {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
          :main-opts ["-m" "cognitect.test-runner"]
          :exec-fn cognitect.test-runner.api/test}
-  :meme {:replace-paths ["src"]
-         :replace-deps {io.github.xpojure-lang/meme-clj
-                        {:git/url "https://github.com/xpojure-lang/meme-clj.git"
-                         :git/sha "97a55968a9926f8f8c1422cfeef67fa91f89f188"}}
-         :ns-default meme.alpha.runtime.cli}}}
+  :run {:ns-default meme.alpha.runtime.cli}}}

@@ -5,17 +5,17 @@ A Clojure project using [meme](https://github.com/xpojure-lang/meme-clj) — M-e
 ## Usage
 
 ```bash
-# Run
-bb run src/{{top/file}}/{{main/file}}/core.meme
+# Run a .meme file
+clojure -X:run run :file '"src/{{top/file}}/{{main/file}}/core.meme"'
 
-# REPL
-bb repl
+# Start a meme REPL
+clojure -X:run repl
 
 # Convert .meme to .clj (or vice versa)
-bb convert src/{{top/file}}/{{main/file}}/core.meme
+clojure -X:run convert :file '"src/{{top/file}}/{{main/file}}/core.meme"'
 
-# Format
-bb format src/
+# Run tests
+clojure -X:test
 ```
 
 ## Syntax
