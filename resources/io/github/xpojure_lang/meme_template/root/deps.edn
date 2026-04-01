@@ -1,5 +1,5 @@
 {:paths ["src"]
- :deps {io.github.xpojure-lang/meme-clj {:mvn/version "1.0.0"}}
+ :deps {io.github.xpojure-lang/meme-clj {:mvn/version "1.4.2026"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner
