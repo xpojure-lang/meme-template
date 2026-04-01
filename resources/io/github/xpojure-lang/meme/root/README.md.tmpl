@@ -1,0 +1,25 @@
+# {{raw-name}}
+
+A Clojure project using [meme](https://github.com/xpojure-lang/meme-clj) — M-expression syntax.
+
+## Usage
+
+```bash
+# Run
+bb run src/{{top/file}}/core.meme
+
+# REPL
+bb repl
+
+# Convert .meme to .clj (or vice versa)
+bb convert src/{{top/file}}/core.meme
+
+# Format
+bb format src/
+```
+
+## Syntax
+
+One rule: `f(x y)` becomes `(f x y)` — the head is written outside the parens, adjacent to `(`.
+
+Everything else is Clojure. File extension: `.meme`.

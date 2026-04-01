@@ -1,0 +1,2 @@
+{:paths ["resources"]
+ :deps {io.github.seancorfield/deps-new {:mvn/version "0.8.1"}}}

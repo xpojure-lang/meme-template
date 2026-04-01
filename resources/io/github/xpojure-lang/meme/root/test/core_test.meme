@@ -1,0 +1,9 @@
+ns({{top/ns}}.core-test
+  :require(
+    [clojure.test :refer [deftest is testing]]
+    [{{top/ns}}.core :as core]))
+
+deftest(greet-test
+  testing("greet returns a greeting"
+    is(=(core/greet("world") "Hello, world!"))
+    is(=(core/greet("meme") "Hello, meme!"))))

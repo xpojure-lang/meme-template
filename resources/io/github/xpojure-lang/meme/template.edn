@@ -1,0 +1,14 @@
+{:description "A meme project — M-expression syntax for Clojure"
+ :transform
+ [["root" ""
+   {"deps.edn" "deps.edn"
+    "bb.edn" "bb.edn"
+    "gitignore" ".gitignore"
+    "README.md.tmpl" "README.md"}
+   :only]
+  ["root/src" "src/{{top/file}}"
+   {"core.meme" "core.meme"}
+   :only]
+  ["root/test" "test/{{top/file}}"
+   {"core_test.meme" "core_test.meme"}
+   :only]]}
