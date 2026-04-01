@@ -1,4 +1,4 @@
-ns({{top/ns}}.core)
+ns({{top/ns}}.{{main/ns}}.core)
 
 defn(greet
   "Returns a greeting for the given name."

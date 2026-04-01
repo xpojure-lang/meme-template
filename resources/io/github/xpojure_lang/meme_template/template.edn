@@ -6,9 +6,9 @@
     "gitignore" ".gitignore"
     "README.md.tmpl" "README.md"}
    :only]
-  ["root/src" "src/{{top/file}}"
+  ["src" "src/{{top/file}}/{{main/file}}"
    {"core.meme" "core.meme"}
    :only]
-  ["root/test" "test/{{top/file}}"
+  ["test" "test/{{top/file}}/{{main/file}}"
    {"core_test.meme" "core_test.meme"}
    :only]]}

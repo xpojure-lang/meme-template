@@ -1,7 +1,7 @@
-ns({{top/ns}}.core-test
+ns({{top/ns}}.{{main/ns}}.core-test
   :require(
     [clojure.test :refer [deftest is testing]]
-    [{{top/ns}}.core :as core]))
+    [{{top/ns}}.{{main/ns}}.core :as core]))
 
 deftest(greet-test
   testing("greet returns a greeting"
