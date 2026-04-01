@@ -3,8 +3,8 @@
  [["root" ""
    {"deps.edn" "deps.edn"
     "bb.edn" "bb.edn"
-    "gitignore" ".gitignore"
-    "README.md.tmpl" "README.md"}
+    "dot_gitignore" ".gitignore"
+    "README.md" "README.md"}
    :only]
   ["src" "src/{{top/file}}/{{main/file}}"
    {"core.meme" "core.meme"}
