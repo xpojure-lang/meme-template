@@ -3,7 +3,7 @@
  [["root" ""
    {"deps.edn" "deps.edn"
     "bb.edn" "bb.edn"
-    "dot_gitignore" ".gitignore"
+    ".gitignore" ".gitignore"
     "README.md" "README.md"}
    :only]
   ["src" "src/{{top/file}}/{{main/file}}"
