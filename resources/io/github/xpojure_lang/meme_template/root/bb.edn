@@ -1,7 +1,6 @@
 {:paths ["src"]
  :deps {io.github.xpojure-lang/meme-clj
-        {:git/url "https://github.com/xpojure-lang/meme-clj.git"
-         :git/sha "97a55968a9926f8f8c1422cfeef67fa91f89f188"}}
+        {:git/url "https://github.com/xpojure-lang/meme-clj.git"}}
  :tasks {run {:doc "Run a .meme file: bb run <file>"
               :task (do (require '[meme.alpha.runtime.cli])
                         (apply (resolve 'meme.alpha.runtime.cli/-main)
