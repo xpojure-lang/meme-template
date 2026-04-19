@@ -11,11 +11,15 @@ clojure -X:run run :file '"src/{{top/file}}/{{main/file}}/core.meme"'
 # Start a meme REPL
 clojure -X:run repl
 
-# Convert .meme to .clj (or vice versa)
-clojure -X:run convert :file '"src/{{top/file}}/{{main/file}}/core.meme"'
+# Convert .meme to .clj (or .clj to .meme)
+clojure -X:run to-clj :file '"src/{{top/file}}/{{main/file}}/core.meme"'
+clojure -X:run to-meme :file '"src/{{top/file}}/{{main/file}}/core.clj"'
 
 # Run tests
 clojure -X:test
+
+# Build a JAR (transpiles .meme → .clj, AOT-compiles, packages)
+clojure -T:build jar
 ```
 
 ## Syntax

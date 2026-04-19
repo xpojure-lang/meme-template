@@ -1,9 +1,11 @@
 {:paths ["src"]
- :deps {io.github.xpojure-lang/meme-clj {:mvn/version "3.3.3"}}
+ :deps {io.github.xpojure-lang/meme-clj {:mvn/version "5.0.0"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner
                       {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
          :main-opts ["-m" "cognitect.test-runner"]
          :exec-fn cognitect.test-runner.api/test}
-  :run {:ns-default meme.runtime.cli}}}
+  :run {:ns-default meme.cli}
+  :build {:deps {io.github.clojure/tools.build {:mvn/version "0.10.7"}}
+          :ns-default build}}}

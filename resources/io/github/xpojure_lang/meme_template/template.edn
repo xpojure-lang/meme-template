@@ -2,6 +2,7 @@
  :transform
  [["root" ""
    {"deps.edn" "deps.edn"
+    "build.clj" "build.clj"
     ".gitignore" ".gitignore"
     "README.md" "README.md"}
    :only]
